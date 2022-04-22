@@ -17,11 +17,11 @@ public class MemberRouter {
     @Bean
     public RouterFunction<ServerResponse> route() {
         return RouterFunctions
-                .route(POST("/signup"), memberHandler::signUpHandler)
-                .andRoute(POST("/login"), memberHandler::loginHandler)
-                .andRoute(POST("/setuplecture"), memberHandler::setUpLectureHandler)
-                .andRoute(POST("/editinfo"), memberHandler::editMemberInfoHandler)
-                .andRoute(POST("/getinfo"), memberHandler::getMemberInfoHandler)
+                .route(POST("/member/signup"), memberHandler::signUpHandler)                                // 회원가입
+                .andRoute(POST("/member/login"), memberHandler::loginHandler)                               // 로그인
+                .andRoute(POST("/member/operator/signup/teacher"), memberHandler::setUpLectureHandler)      // 강사 생성 (관리자만)
+                .andRoute(POST("/member/edit"), memberHandler::editMemberInfoHandler)                       // 회원정보 수정
+                .andRoute(POST("/member/getinfo"), memberHandler::getMemberInfoHandler)                     // 회원정보 제공
                 ;
     }
 }
