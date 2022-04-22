@@ -2,8 +2,8 @@
 
 
 - [회원 모듈](https://github.com/kysyo/OnlineClass-Member)
-- [강의 모듈](https://github.com/kysyo/OnlineClass-Member)
-- [게시판 모듈](https://github.com/kysyo/OnlineClass-Member)
+- [강의 모듈](https://github.com/kysyo/OnlineClass-Lecture)
+- [게시판 모듈](https://github.com/kysyo/OnlineClass-NoticeBoard)
 
 # 도메인 모델
 ![DDD 도메인 과제 - 도메인 모델](https://user-images.githubusercontent.com/53042885/164647974-3815559b-298f-44f7-b7ba-d67c26d89320.jpg)
